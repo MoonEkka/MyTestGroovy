@@ -1,7 +1,7 @@
 job('DSL-Tutorial-1-Test') {
     description('Builds the app')
     scm {
-       git(git('git://github.com/quidryan/aws-sdk-test.git')
+       git(https://github.com/MoonEkka/MyTestGroovy.git)
     )
     }
     triggers {
@@ -14,7 +14,7 @@ job('DSL-Tutorial-1-Test') {
 job('DSL-Tutorial-1-Test4') {
     description('Builds the app2')
     scm {
-        git('git://github.com/quidryan/aws-sdk-test.git')
+        git('https://github.com/MoonEkka/MyTestGroovy.git')
     }
     triggers {
         scm('H/15 * * * *')
